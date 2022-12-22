@@ -1,0 +1,8 @@
+factory\BeanFactory.class
+factory\config\SingletonBeanRegistry.class
+factory\suuport\DefaultSingletonBeanRegistry.class
+factory\suuport\AbstractAutowireCapableBeanFactory.class
+factory\suuport\AbstractBeanFactory.class
+factory\suuport\BeanDefinitionRegistry.class
+factory\suuport\DefaultListableBeanFactory.class
+factory\config\BeanDefinition.class
