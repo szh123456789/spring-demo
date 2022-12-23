@@ -9,12 +9,12 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
         Object bean = null;
 
         try {
-            bean = beanDefinition.getClass().newInstance();
+            bean = beanDefinition.getBean().newInstance();
         }catch (Exception e){
             throw new RuntimeException("Instantiation of bean failed", e);
         }
 
-        registerSingleton(beanName, beanDefinition);
+        registerSingleton(beanName, bean);
 
         return bean;
     }

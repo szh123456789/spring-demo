@@ -11,4 +11,6 @@ public class BeanDefinition {
     public Class getBean(){
         return bean;
     }
+
+    public void setBean(Class bean){this.bean = bean;}
 }

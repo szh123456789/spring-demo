@@ -13,9 +13,9 @@ public class SimpleInstantiationStrategy implements InstantiationStrategy{
 
         try {
             if (null != ctor){
-                return clazz.getDeclaredConstructor(ctor.getParameterTypes()).newInstance();
+                return clazz.getDeclaredConstructor(ctor.getParameterTypes()).newInstance(args);
             }else {
-                return clazz.newInstance();
+                return clazz.getDeclaredConstructor().newInstance();
             }
         }catch (NoSuchMethodException | InstantiationException | IllegalAccessException | InvocationTargetException e){
             throw new BeanException("Failed to instantiate [" + clazz.getName() + "]", e);

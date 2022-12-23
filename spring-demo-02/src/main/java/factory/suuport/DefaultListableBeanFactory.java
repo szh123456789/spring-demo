@@ -2,11 +2,12 @@ package factory.suuport;
 
 import factory.config.BeanDefinition;
 
+import java.util.HashMap;
 import java.util.Map;
 
 public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFactory implements BeanDefinitionRegistry{
 
-    public Map<String, BeanDefinition> beanDefinitionMap;
+    private Map<String, BeanDefinition> beanDefinitionMap = new HashMap<>();
 
     @Override
     public BeanDefinition getBeanDefinition(String beanName) {
@@ -15,7 +16,7 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
         if (null == beanDefinition){
             throw new RuntimeException("No bean named '" + beanName + "' is defined");
         }
-        return beanDefinitionMap.get(beanName);
+        return beanDefinition;
     }
 
     @Override
