@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-demo-03" />
         <module name="spring-demo-02" />
+        <module name="spring-demo-04" />
         <module name="spring-demo-01" />
       </profile>
     </annotationProcessing>
@@ -16,6 +17,7 @@
       <module name="spring-demo-01" target="1.8" />
       <module name="spring-demo-02" target="1.8" />
       <module name="spring-demo-03" target="1.8" />
+      <module name="spring-demo-04" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

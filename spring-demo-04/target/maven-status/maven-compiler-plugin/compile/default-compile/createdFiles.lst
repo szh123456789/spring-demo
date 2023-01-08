@@ -1,0 +1,16 @@
+com\test\facaory\support\DefaultSingletonBeanRegistry.class
+com\test\PropertyValues.class
+com\test\facaory\config\BeanDefinition.class
+com\test\PropertyValue.class
+com\test\facaory\support\AbstractBeanFactory.class
+com\test\facaory\BeanFactory.class
+com\test\facaory\config\BeanReference.class
+com\test\facaory\support\CglibSubclassingInstantiationStrategy$1.class
+com\test\facaory\support\DefaultListableBeanFactory.class
+com\test\facaory\support\AbstractAutowireCapableBeanFactory.class
+com\test\facaory\support\SimpleInstantiationStrategy.class
+com\test\BeanException.class
+com\test\facaory\support\CglibSubclassingInstantiationStrategy.class
+com\test\facaory\support\InstantiationStrategy.class
+com\test\facaory\support\BeanDefinitionRegistry.class
+com\test\facaory\config\SingletonBeanRegistry.class
