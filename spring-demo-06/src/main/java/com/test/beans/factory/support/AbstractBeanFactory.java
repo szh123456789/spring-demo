@@ -3,9 +3,15 @@ package com.test.beans.factory.support;
 import com.test.beans.BeanException;
 import com.test.beans.factory.BeanFactory;
 import com.test.beans.factory.config.BeanDefinition;
+import com.test.beans.factory.config.BeanPostProcessor;
 import com.test.beans.factory.config.ConfigurableBeanFactory;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public abstract class AbstractBeanFactory extends DefaultSingletonBeanRegistry implements ConfigurableBeanFactory {
+
+    private final List<BeanPostProcessor> beanPostProcessors = new ArrayList<>();
 
     @Override
     public Object getBean(String name) throws BeanException {
@@ -33,7 +39,19 @@ public abstract class AbstractBeanFactory extends DefaultSingletonBeanRegistry i
         return (T) createBean(name, beanDefinition, args);
     }
 
+
+
     protected abstract BeanDefinition getBeanDefinition(String beanName);
 
     protected abstract Object createBean(String beanName, BeanDefinition beanDefinition, Object[] args);
+
+    @Override
+    public void addBeanPostProcessor(BeanPostProcessor beanPostProcessor) {
+        this.beanPostProcessors.remove(beanPostProcessor);
+        this.beanPostProcessors.add(beanPostProcessor);
+    }
+
+    public List<BeanPostProcessor> getBeanPostProcessors(){
+        return this.beanPostProcessors;
+    }
 }
