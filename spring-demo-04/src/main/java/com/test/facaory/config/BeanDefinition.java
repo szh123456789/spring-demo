@@ -2,10 +2,15 @@ package com.test.facaory.config;
 
 import com.test.PropertyValues;
 
+/**
+ * bean对象实例信息
+ */
 public class BeanDefinition {
 
+    //bean对象类名称
     private Class beanClass;
 
+    //bean对象属性信息
     private PropertyValues propertyValues;
 
     public BeanDefinition(Class beanClass){

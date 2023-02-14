@@ -18,6 +18,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
         Object bean = null;
         try{
             bean = createBeanInstance(beanDefinition, beanName, args);
+            //在bean实例化后，给bean填充属性
             applyPropertyValues(beanName, bean, beanDefinition);
         }catch (Exception e){
             throw new BeanException("Instantiation of bean failed", e);

@@ -18,9 +18,11 @@ public class ApiTest {
         XmlBeanDefinitionReader reader = new XmlBeanDefinitionReader(beanFactory);
         reader.loadBeanDefinitions("classpath:spring.xml");
 
+        //在beanDefinition加载完成，实例化之前，修改beanDefinition属性
         MyBeanFactoryPostProcessor beanFactoryPostProcessor = new MyBeanFactoryPostProcessor();
         beanFactoryPostProcessor.postProcessBeanFactory(beanFactory);
 
+        //实例化之后修改Bean属性
         MyBeanPostProcessor beanPostProcessor = new MyBeanPostProcessor();
         beanFactory.addBeanPostProcessor(beanPostProcessor);
 

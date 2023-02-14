@@ -1,5 +1,8 @@
 package com.test.facaory.config;
 
+/**
+ * bean对象名称引用
+ */
 public class BeanReference {
 
     private final String beanName;

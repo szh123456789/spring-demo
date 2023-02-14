@@ -1,5 +1,8 @@
 package com.test.factory.config;
 
+/**
+ * bean对象信息
+ */
 public class BeanDefinition {
 
     private Class beanClass;

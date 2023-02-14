@@ -16,6 +16,13 @@ public abstract class AbstractBeanFactory extends DefaultSingletonBeanRegistry i
         return doGetBean(name, args);
     }
 
+    /**
+     * 根据beanName和参数列表来选择要获取的bean对象
+     * @param name
+     * @param args
+     * @param <T>
+     * @return
+     */
     protected <T> T doGetBean(final String name, final Object[] args){
         Object bean = getSingleton(name);
 

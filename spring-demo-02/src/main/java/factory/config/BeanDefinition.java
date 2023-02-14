@@ -1,5 +1,8 @@
 package factory.config;
 
+/**
+ * 定义bean实例信息
+ */
 public class BeanDefinition {
 
     Class bean;

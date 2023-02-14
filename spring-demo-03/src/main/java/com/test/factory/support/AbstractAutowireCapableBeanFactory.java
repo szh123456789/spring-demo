@@ -5,6 +5,9 @@ import com.test.factory.config.BeanDefinition;
 
 import java.lang.reflect.Constructor;
 
+/**
+ * 创建bean
+ */
 public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFactory{
 
     private InstantiationStrategy instantiationStrategy = new SimpleInstantiationStrategy();
@@ -22,6 +25,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
         return bean;
     }
 
+    //创建bean实例
     protected Object createBeanInstance(BeanDefinition beanDefinition, String beanName, Object[] args){
         Constructor constructorToUse = null;
         Class<?> beanClass = beanDefinition.getBeanClass();
