@@ -2,6 +2,9 @@ package com.test.beans.factory.config;
 
 import com.test.beans.BeanException;
 
+/**
+ * 修改新实例化的对象的扩展点
+ */
 public interface BeanPostProcessor {
 
     /**

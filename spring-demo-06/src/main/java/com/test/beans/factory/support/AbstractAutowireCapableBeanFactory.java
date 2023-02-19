@@ -22,8 +22,8 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
             bean = createBeanInstance(beanDefinition, beanName, args);
             // 给 Bean 填充属性
             applyPropertyValues(beanName, bean, beanDefinition);
-
-            initializeBean(beanName, bean, beanDefinition);
+            //bean的初始化方法和beanPostProcessor实例化对象的前置与后置处理
+            bean = initializeBean(beanName, bean, beanDefinition);
         } catch (Exception e) {
             throw new BeanException("Instantiation of bean failed", e);
         }
@@ -33,10 +33,11 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
     }
 
     private Object initializeBean(String beanName, Object bean, BeanDefinition beanDefinition){
+        // 1. 执行 BeanPostProcessor Before 处理
         Object wrappedBean = applyBeanPostProcessorsBeforeInitialization(bean, beanName);
 
         invokeInitMethods(beanName, wrappedBean, beanDefinition);
-
+        // 2. 执行 BeanPostProcessor After 处理
         wrappedBean = applyBeanPostProcessorsAfterInitialization(bean, beanName);
         return wrappedBean;
     }

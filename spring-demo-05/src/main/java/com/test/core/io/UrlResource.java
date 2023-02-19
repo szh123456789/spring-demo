@@ -6,6 +6,9 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLConnection;
 
+/**
+ * 网络资源
+ */
 public class UrlResource implements Resource{
 
     private final URL url;

@@ -2,6 +2,9 @@ package com.test.context;
 
 import com.test.beans.BeanException;
 
+/**
+ * 第三方调用服务接口
+ */
 public interface ConfigurableApplicationContext extends ApplicationContext{
 
     /**

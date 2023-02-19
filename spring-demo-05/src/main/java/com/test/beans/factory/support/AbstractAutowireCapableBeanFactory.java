@@ -9,6 +9,9 @@ import com.test.beans.factory.config.BeanReference;
 
 import java.lang.reflect.Constructor;
 
+/**
+ * 自动装配bean对象
+ */
 public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFactory{
 
     private InstantiationStrategy instantiationStrategy = new CglibSubclassingInstantiationStrategy();

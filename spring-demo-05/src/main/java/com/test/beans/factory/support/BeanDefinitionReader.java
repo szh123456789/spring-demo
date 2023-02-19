@@ -4,6 +4,9 @@ import com.test.beans.BeanException;
 import com.test.core.io.Resource;
 import com.test.core.io.ResourceLoader;
 
+/**
+ * 定义bean的读取的简单实现类
+ */
 public interface BeanDefinitionReader {
 
     BeanDefinitionRegistry getRegistry();

@@ -5,6 +5,9 @@ import com.test.beans.factory.BeanFactory;
 import com.test.beans.factory.config.BeanDefinition;
 import com.test.beans.factory.config.ConfigurableBeanFactory;
 
+/**
+ * 抽象的 Bean 工厂基类，定义模板方法
+ */
 public abstract class AbstractBeanFactory extends DefaultSingletonBeanRegistry implements ConfigurableBeanFactory {
 
     @Override

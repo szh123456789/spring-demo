@@ -10,6 +10,9 @@ import org.junit.Test;
 
 public class ApiTest {
 
+    /**
+     * 不适用上下文
+     */
     @Test
     public void test_BeanFactoryPostProcessorAndBeanPostProcessor(){
 
@@ -31,6 +34,9 @@ public class ApiTest {
         System.out.println("测试结果：" + result);
     }
 
+    /**
+     * 使用上下文
+     */
     @Test
     public void test_xml(){
         ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:springPostProcessor.xml");

@@ -8,6 +8,9 @@ import com.test.beans.factory.config.ConfigurableBeanFactory;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * 默认注册bean对象存储的实体类
+ */
 public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFactory implements BeanDefinitionRegistry, ConfigurableListableBeanFactory {
 
     private Map<String, BeanDefinition> beanDefinitionMap = new HashMap<>();

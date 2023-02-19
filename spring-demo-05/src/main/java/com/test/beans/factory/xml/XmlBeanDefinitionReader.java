@@ -17,6 +17,9 @@ import org.w3c.dom.NodeList;
 import java.io.IOException;
 import java.io.InputStream;
 
+/**
+ * 读取从xml中读取的bean对象
+ */
 public class XmlBeanDefinitionReader extends AbstractBeanDefinitionReader {
 
     public XmlBeanDefinitionReader(BeanDefinitionRegistry beanDefinitionRegistry){

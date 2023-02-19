@@ -1,5 +1,8 @@
 package com.test.util;
 
+/**
+ * 类加载工具类
+ */
 public class ClassUtils {
 
     public static ClassLoader getDefaultClassLoader(){

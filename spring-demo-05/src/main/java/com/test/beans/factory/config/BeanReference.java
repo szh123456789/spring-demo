@@ -1,5 +1,8 @@
 package com.test.beans.factory.config;
 
+/**
+ * bean对象的引用
+ */
 public class BeanReference {
 
     private final String beanName;

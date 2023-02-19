@@ -8,6 +8,9 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 
+/**
+ * 类路径资源
+ */
 public class ClassPathResource implements Resource {
 
     private final String path;

@@ -2,6 +2,7 @@ package com.test.beans.factory.config;
 
 import com.test.beans.PropertyValues;
 
+//定义bean实例信息
 public class BeanDefinition {
 
     private Class beanClass;
