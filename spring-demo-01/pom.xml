@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>spring-demo-01</artifactId>
+    <artifactId>spring-com.test.demo-01</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring-demo-01</name>
-    <description>spring-demo-01</description>
+    <name>spring-com.test.demo-01</name>
+    <description>spring-com.test.demo-01</description>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>

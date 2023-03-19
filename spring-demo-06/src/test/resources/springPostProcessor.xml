@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans>
 
-    <bean id="userDao" class="com.test.demo.bean.UserDao"/>
+    <bean id="userDao" class="com.test.com.test.demo.bean.UserDao"/>
 
-    <bean id="userService" class="com.test.demo.bean.UserService">
+    <bean id="userService" class="com.test.com.test.demo.bean.UserService">
         <property name="uId" value="10001"/>
         <property name="company" value="腾讯"/>
         <property name="location" value="深圳"/>
         <property name="userDao" ref="userDao"/>
     </bean>
 
-    <bean class="com.test.demo.common.MyBeanPostProcessor"/>
-    <bean class="com.test.demo.common.MyBeanFactoryPostProcessor"/>
+    <bean class="com.test.com.test.demo.common.MyBeanPostProcessor"/>
+    <bean class="com.test.com.test.demo.common.MyBeanFactoryPostProcessor"/>
 
 </beans>

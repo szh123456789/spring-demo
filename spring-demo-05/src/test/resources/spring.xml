@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <com.test.beans>
 
-    <bean id="userDao" class="com.test.demo.bean.UserDao"/>
+    <bean id="userDao" class="com.test.com.test.demo.bean.UserDao"/>
 
-    <bean id="userService" class="com.test.demo.bean.UserService">
+    <bean id="userService" class="com.test.com.test.demo.bean.UserService">
         <property name="uId" value="10001"/>
         <property name="userDao" ref="userDao"/>
     </bean>
