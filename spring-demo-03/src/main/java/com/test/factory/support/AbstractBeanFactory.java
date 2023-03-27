@@ -4,7 +4,11 @@ import com.test.BeanException;
 import com.test.factory.BeanFactory;
 import com.test.factory.config.BeanDefinition;
 
+/**
+ * 根据beanName获取bean对象
+ */
 public abstract class AbstractBeanFactory extends DefaultSingletonBeanRegistry implements BeanFactory {
+
 
     @Override
     public Object getBean(String name) throws BeanException {

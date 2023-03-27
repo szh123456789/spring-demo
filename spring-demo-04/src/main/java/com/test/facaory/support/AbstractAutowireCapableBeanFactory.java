@@ -9,6 +9,9 @@ import com.test.facaory.config.BeanReference;
 
 import java.lang.reflect.Constructor;
 
+/**
+ * bean对象实例化
+ */
 public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFactory{
 
     private InstantiationStrategy instantiationStrategy = new CglibSubclassingInstantiationStrategy();
