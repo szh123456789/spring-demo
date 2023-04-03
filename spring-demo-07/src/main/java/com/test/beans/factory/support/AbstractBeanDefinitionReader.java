@@ -3,6 +3,9 @@ package com.test.beans.factory.support;
 import com.test.core.io.DefaultResourceLoader;
 import com.test.core.io.ResourceLoader;
 
+/**
+ * bean对象读取抽象类
+ */
 public abstract class AbstractBeanDefinitionReader implements BeanDefinitionReader{
 
     private final BeanDefinitionRegistry registry;

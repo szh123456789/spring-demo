@@ -26,6 +26,7 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
         return beanDefinition;
     }
 
+    //根据已注册的bean的name提前将已经注册的bean对象进行实例化
     @Override
     public void preInstantiateSingletons() throws BeanException {
         beanDefinitionMap.keySet().forEach(this::getBean);

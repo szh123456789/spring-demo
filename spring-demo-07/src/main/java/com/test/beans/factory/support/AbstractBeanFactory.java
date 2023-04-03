@@ -8,8 +8,12 @@ import com.test.beans.factory.config.ConfigurableBeanFactory;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 抽象bean工厂
+ */
 public abstract class AbstractBeanFactory extends DefaultSingletonBeanRegistry implements ConfigurableBeanFactory {
 
+    //bean对象的实例化处理方法存放
     private final List<BeanPostProcessor> beanPostProcessors = new ArrayList<>();
 
     @Override
@@ -27,6 +31,7 @@ public abstract class AbstractBeanFactory extends DefaultSingletonBeanRegistry i
         return (T) getBean(name);
     }
 
+    //获取对象实例，若之前创建过，则从内存中获取，若没有创建，则需要先创建然后在获取
     protected <T> T doGetBean(final String name, final Object[] args){
         Object bean = getSingleton(name);
         if (null != bean){

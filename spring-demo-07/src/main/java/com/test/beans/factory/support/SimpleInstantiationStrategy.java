@@ -6,6 +6,9 @@ import com.test.beans.factory.config.BeanDefinition;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 
+/**
+ *
+ */
 public class SimpleInstantiationStrategy implements InstantiationStrategy{
     @Override
     public Object instantiate(BeanDefinition beanDefinition, String beanName, Constructor ctor, Object[] args) {

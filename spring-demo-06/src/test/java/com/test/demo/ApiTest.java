@@ -11,7 +11,7 @@ import org.junit.Test;
 public class ApiTest {
 
     /**
-     * 不适用上下文
+     * 不使用上下文
      */
     @Test
     public void test_BeanFactoryPostProcessorAndBeanPostProcessor(){

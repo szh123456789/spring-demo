@@ -1,5 +1,8 @@
 package com.test.beans.factory;
 
+/**
+ * 初始化对象接口
+ */
 public interface InitializingBean {
 
     /**

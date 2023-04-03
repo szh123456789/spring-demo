@@ -4,8 +4,6 @@ import com.test.beans.BeanException;
 import com.test.beans.factory.config.BeanPostProcessor;
 import com.test.demo.bean.UserService;
 
-import javax.jnlp.UnavailableServiceException;
-
 public class MyBeanPostProcessor implements BeanPostProcessor {
     @Override
     public Object postProcessorBeforeInitialization(Object bean, String beanName) throws BeanException {

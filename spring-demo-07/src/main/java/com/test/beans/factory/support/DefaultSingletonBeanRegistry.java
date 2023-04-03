@@ -8,6 +8,9 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
+/**
+ * bean对象的name与实例的对应关系处理类
+ */
 public class DefaultSingletonBeanRegistry implements SingletonBeanRegistry {
 
     private Map<String, Object>  singletonObjects = new HashMap();

@@ -1,5 +1,8 @@
 package com.test.beans;
 
+/**
+ * bean属性
+ */
 public class PropertyValue {
 
     private final String name;

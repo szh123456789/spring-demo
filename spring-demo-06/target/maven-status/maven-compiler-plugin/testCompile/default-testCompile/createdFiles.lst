@@ -1,0 +1,5 @@
+com\test\demo\ApiTest.class
+com\test\demo\bean\UserService.class
+com\test\demo\common\MyBeanFactoryPostProcessor.class
+com\test\demo\bean\UserDao.class
+com\test\demo\common\MyBeanPostProcessor.class
